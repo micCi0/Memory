@@ -1,0 +1,65 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz@9..40&family=Montserrat:ital,wght@0,400;1,200&family=Poppins&family=Roboto+Condensed:wght@439&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+/* colors */
+:root{
+    --first-color:#ffffff;
+    --second-color:#0495DE;
+    --border-color:#000000;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-flow: wrap;
+    background: var(--second-color);
+}
+h1{
+    text-align: center;
+    font-size: 25px;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+    text-transform: uppercase;
+}
+.field{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    width: 300px;
+    margin: 0 0 20px;
+    background: var(--first-color);
+}
+.field .control{
+    width: 75px;
+    height: 65px;
+    border: 3px solid var(--border-color);
+    box-shadow: 0 0 0 2px;
+    font-size: 35px;
+    line-height: 55px;
+    text-align: center;
+    cursor: pointer;
+}
+button{
+    width: 305px;
+    padding: 7px 12px;
+    background: var(--second-color);
+    color: var(--first-color);
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: block;
+}
+button.hide{
+    display: none;
+}
+.wrapper{
+    background: var(--first-color);
+    padding: 20px 40px 20px;
+    border-radius: 5px;
+}
